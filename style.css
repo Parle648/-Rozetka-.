@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    background-color: #313086;
+    padding-top: 93px;
+    background-image: url(./img/Image\ -\ star.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 110px;
+    margin-bottom: 100px;
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-ttl,
+.grid-description__item {
+    font-family: 'Russo One';
+    color: #fff;
+    font-size: 80px;
+    text-align: center;
+    width: 976px;
+}
+
+.hero-section__img {
+    margin-bottom: 60px;
+    max-width: 100%;
+}
+
+.hero-section__img-mobile {
+    display: none;
+}
+
+.composition-block_table {
+    display: none;
+}
+
+.wrapper {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.grid-description {
+    width: 1440px;
+    
+    display: grid;
+    grid-gap: 74px 207px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-description__item {
+    width: 539px;
+    font-size: 50px;
+    text-align: start;
+}
+
+.grid-description__subttl {
+    font-size: 40px;
+}
+
+.grid-description__img {
+    margin-bottom: -30px;
+}
+
+ /* composition-block */
+
+.composition-block {
+    margin-bottom: 100px;
+}
+
+/* description block */
+
+.description-block {
+    margin-bottom: 80px;
+}
+
+.description-block__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description-block__paragraph {
+    width: 850px;
+    font-family: 'Russo One';
+    font-size: 35px;
+}
+
+.orange {
+    font-size: 50px;
+    color: #e27601;
+}
+
+.description-block__img {
+    width: 500px;
+    height: 500px;
+}
+
+/* footer */
+
+.footer {
+    background-color: #313086;
+    background-image: url(./img/footer-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer__ttl {
+    font-family: 'Russo One';
+    color: #fff;
+    font-size: 80px;
+    text-align: center;
+    width: 976px;
+    margin: 0 auto;
+    padding-top: 80px;
+    margin-bottom: 60px;
+}
+
+.comparsion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comparsion__img {
+    margin-bottom: 30px;
+}
+
+.comparsion__ttl {
+    font-family: 'Russo One';
+    color: #fff;
+    font-size: 50px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.comparsion-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 70px 30px;
+    margin-bottom: 80px;
+}
+
+.comparsion-grid__item {
+    width: 700px;
+    height: 140px;
+    background-color: #e27601;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Russo One';
+    color: #fff;
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+
+    position: relative;
+}
+
+.comparsion-grid__item-ttl {
+    color: #e27601;
+    position: absolute;
+    font-size: 40px;
+    left: 0;
+    top: -60px;
+}
+
+.footer__final-ttl {
+    font-family: 'Russo One';
+    color: #fff;
+    font-size: 80px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 350px;
+}
+
+/* medias */
+
+@media (max-width: 1440px) {
+    .logo {
+        height: 250px;
+    }
+
+    .wrapper {
+        width: 924px;
+    }
+
+    .hero-section {
+        margin-bottom: 30px;
+    }
+
+    .product-ttl, 
+    .grid-description__item {
+        font-size: 50px;
+        width: auto;
+    }
+
+    .grid-description {
+        width: 100%;
+        display: grid;
+        grid-gap: 35px 207px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-description__item {
+        font-size: 30px;
+    }
+
+    .grid-description__subttl {
+        font-size: 25px;
+    }
+
+    .description-block__item {
+        margin-bottom: 30px;
+    }
+
+    .description-block__img {
+        width: 320px;
+        height: 320px;
+        margin-bottom: 40px;
+    }
+
+    .orange {
+        font-size: 30px;
+    }
+
+    .description-block__paragraph {
+        font-size: 25px;
+        width: 550px;
+    }
+
+    .composition-block {
+        display: none;
+    }
+
+    .composition-block_table {
+        display: block;
+        width: 100%;
+    }
+    .comparsion-grid__item {
+        width: 459px;
+        font-size: 28px;
+    }
+
+    .comparsion__img {
+        width: 400px;
+        margin-bottom: 30px;
+    }
+
+    .comparsion__ttl {
+        font-size: 40px;
+    }
+
+    .footer__final-ttl {
+        font-size: 50px;
+    }
+
+    .footer {
+        background-position: bottom;
+    }
+}
+
+@media (max-width: 950px) {
+    .wrapper {
+        width: 300px;
+    }
+
+    .hero-section {
+        padding-top: 30px;
+        background-image: url(./img/stars-mobile.png);
+    }
+
+    .logo-block {
+        flex-direction: column;
+    }
+
+    .logo {
+        height: 200px;
+        margin-bottom: 30px;
+    }
+
+    .product-ttl {
+        margin-bottom: 30px;
+        font-size: 46px;
+    }
+
+    .hero-section__img {
+        display: none;
+    }
+
+    .hero-section__img-mobile {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .grid-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-description__item {
+        width: 327px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    .description-block__img {
+        margin-bottom: 20px;
+    }
+
+    .grid-description__subttl {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .grid-description__img { 
+        height: 70px;
+        width: 80px;
+        margin: 0;
+    }
+
+    .orange {
+        font-size: 20px;
+    }
+
+    .description-block__paragraph {
+        width: 300px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .description-block__img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .description-block__item {
+        flex-direction: column;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .footer {
+        background-image: url(./img/footer-background-mobile.png);
+    }
+
+    .footer__ttl,
+    .comparsion,
+    .comparsion-grid {
+        display: none;
+    }
+
+    .footer__final-ttl {
+        font-size: 40px;
+        padding: 30px 0px 100px;
+    }
+}
